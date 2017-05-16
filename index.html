@@ -7,14 +7,12 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="icon" href="../../favicon.ico">
+        <link rel="icon" href="img/icone.png">
 
-        <title>Cover Template for Bootstrap</title>
+        <title>CV Guillaume Deloget</title>
 
         <!-- Bootstrap core CSS -->
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 
         <!-- Custom styles for this template -->
         <link href="css/style.css" rel="stylesheet">
@@ -27,9 +25,61 @@
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+        <script src="bootstrap/js/jquery.js"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
+
+        <link href="slippry/slippry.css" rel="stylesheet">
+        <script src="slippry/slippry.min.js"></script>
+
     </head>
 
     <body>
+
+        <ul id="pictures-demo">
+            <li title="This is caption 1 <a href='#link'>Even with links!</a>">
+                <img src="img/fond1.jpg" alt="demo1_1">
+            </li>
+            <li title="This is caption 2">
+                <img src="img/fond2.jpg"  alt="demo1_2">
+            </li>
+            <li title="And this is some very long caption for slide 3. Yes, really long.">
+                <img src="img/fond3.jpg" alt="demo1_3">
+            </li>
+        </ul>
+        <script> 
+            $(function(){
+                var demo1= $('#pictures-demo').slippry({
+                    // general elements & wrapper
+                    slippryWrapper: '<div class="sy-box pictures-slider" />', // wrapper to wrap everything, including pager
+
+                    // options
+                    adaptiveHeight: false, // height of the sliders adapts to current slide
+                    captions: false, // Position: overlay, below, custom, false
+
+                    // pager
+                    pager: false,
+
+                    // controls
+                    controls: false,
+                    autoHover: false,
+
+                    // transitions
+                    transition: 'kenburns', // fade, horizontal, kenburns, false
+                    kenZoom: 140,
+                    speed: 77000 // time the transition takes (ms)
+                });
+            });
+        </script>
+
+
+
+
+
+
+
+
+
+
 
         <div class="site-wrapper">
 
@@ -60,7 +110,6 @@
 
                     <div class="mastfoot">
                         <div class="inner">
-                            <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
                         </div>
                     </div>
 
@@ -73,9 +122,6 @@
         <!-- Bootstrap core JavaScript
 ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="bootstrap/js/jquery.js"></script>
         <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-        <script src="bootstrap/js/bootstrap.js"></script>
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     </body>
 </html>
