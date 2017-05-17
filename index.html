@@ -7,14 +7,12 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="icon" href="../../favicon.ico">
+        <link rel="icon" href="img/icone.png">
 
-        <title>Cover Template for Bootstrap</title>
+        <title>CV Guillaume Deloget</title>
 
         <!-- Bootstrap core CSS -->
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 
         <!-- Custom styles for this template -->
         <link href="css/style.css" rel="stylesheet">
@@ -27,10 +25,56 @@
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+        <script src="bootstrap/js/jquery.js"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
+
+        <link href="slippry/slippry.css" rel="stylesheet">
+        <script src="slippry/slippry.min.js"></script>
+
     </head>
 
     <body>
 
+        <ul id="pictures-demo">
+            <li title="Fond1">
+                <img src="img/fond1.jpg" alt="Fond1">
+            </li>
+            <li title="Fond2">
+                <img src="img/fond2.jpg"  alt="Fond2">
+            </li>
+            <li title="Fond3">
+                <img src="img/fond3.jpg" alt="Fond3">
+            </li>
+            <li title="Fond4">
+                <img src="img/fond4.jpg" alt="Fond1">
+            </li>
+        </ul>
+        <script> 
+            $(function(){
+                var demo1= $('#pictures-demo').slippry({
+                    // general elements & wrapper
+                    slippryWrapper: '<div class="sy-box pictures-slider" style="z-index: 2;width: 100%;position: fixed;"/>', // wrapper to wrap everything, including pager
+
+                    // options
+                    adaptiveHeight: false, // height of the sliders adapts to current slide
+                    captions: false, // Position: overlay, below, custom, false
+
+                    // pager
+                    pager: false,
+
+                    // controls
+                    controls: false,
+                    autoHover: false,
+
+                    // transitions
+                    transition: 'kenburns', // fade, horizontal, kenburns, false
+                    kenZoom: 140,
+                    speed: 8000 // time the transition takes (ms)
+                });
+            });
+        </script>
+
+<div class="content" style="z-index: 10;position: relative;height:100%;margin-top:0xp;">
         <div class="site-wrapper">
 
             <div class="site-wrapper-inner">
@@ -60,22 +104,66 @@
 
                     <div class="mastfoot">
                         <div class="inner">
-                            <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
                         </div>
                     </div>
 
                 </div>
 
             </div>
-
         </div>
+    
+    <div style="background-color:white;"> 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra quam quis est suscipit aliquam. Quisque tempus varius nisl, sit amet fermentum ipsum pharetra in. Quisque sagittis molestie enim nec tempus. Quisque vel ullamcorper neque, ac accumsan justo. Donec ultricies fringilla elementum. Suspendisse pulvinar arcu sit amet facilisis vestibulum. Praesent imperdiet sed ex sit amet lacinia.
+
+Mauris dignissim vitae turpis sit amet feugiat. Nullam bibendum lectus tellus, sit amet porta nisl fringilla non. Vivamus arcu ante, dapibus et fringilla in, interdum in turpis. Pellentesque accumsan in libero eu consequat. Aliquam ligula dui, egestas mattis sollicitudin in, aliquam vitae purus. Donec placerat ut magna at vestibulum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam eros ante, vulputate eu vehicula non, varius vel est. Maecenas ac suscipit enim. Praesent eu tellus massa. Pellentesque vulputate et mi vel posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis purus nisi, non gravida velit eleifend eget.
+
+Nam diam turpis, euismod nec mi a, ultrices semper nunc. Ut eu tristique dolor. Fusce lorem libero, tincidunt vitae ante et, dignissim pellentesque ante. Phasellus in lorem et nisi sodales faucibus a at nibh. Nulla quis ligula lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sagittis tellus at pretium. Nullam nec mi eget est rutrum semper. Aliquam erat volutpat. Cras molestie volutpat libero, vel scelerisque velit porttitor et. Curabitur sit amet euismod risus. Donec vitae fringilla erat, nec pharetra leo. Duis euismod pharetra ante id eleifend. Sed ligula dolor, lacinia rhoncus urna ut, congue gravida elit. Maecenas ac ultricies lacus.
+
+Duis ornare tortor eget tristique euismod. Sed ullamcorper est eget turpis finibus pharetra. Sed id vehicula dui, ac rhoncus elit. Quisque ut ultricies lacus. Etiam sit amet aliquet nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris porttitor libero pharetra arcu porta blandit. Donec non facilisis tellus, nec pretium arcu.
+
+Maecenas finibus tempor urna eget egestas. In sagittis nibh in urna sagittis porta. Praesent leo ipsum, porttitor ut convallis et, porttitor non dui. Nam in dapibus sapien. Aenean ipsum risus, aliquam at dictum bibendum, bibendum non eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In hac habitasse platea dictumst. Nam at volutpat diam, a condimentum risus. Donec sed facilisis urna. Sed eleifend, augue et ultrices tempus, tellus lectus sollicitudin ipsum, sit amet suscipit urna odio vel lacus. Sed ullamcorper elit a nisl interdum, ac venenatis dolor varius. In hac habitasse platea dictumst. Maecenas nisl purus, porttitor sit amet aliquam sed, rutrum sit amet elit. Ut eget mi orci.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra quam quis est suscipit aliquam. Quisque tempus varius nisl, sit amet fermentum ipsum pharetra in. Quisque sagittis molestie enim nec tempus. Quisque vel ullamcorper neque, ac accumsan justo. Donec ultricies fringilla elementum. Suspendisse pulvinar arcu sit amet facilisis vestibulum. Praesent imperdiet sed ex sit amet lacinia.
+
+Mauris dignissim vitae turpis sit amet feugiat. Nullam bibendum lectus tellus, sit amet porta nisl fringilla non. Vivamus arcu ante, dapibus et fringilla in, interdum in turpis. Pellentesque accumsan in libero eu consequat. Aliquam ligula dui, egestas mattis sollicitudin in, aliquam vitae purus. Donec placerat ut magna at vestibulum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam eros ante, vulputate eu vehicula non, varius vel est. Maecenas ac suscipit enim. Praesent eu tellus massa. Pellentesque vulputate et mi vel posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis purus nisi, non gravida velit eleifend eget.
+
+Nam diam turpis, euismod nec mi a, ultrices semper nunc. Ut eu tristique dolor. Fusce lorem libero, tincidunt vitae ante et, dignissim pellentesque ante. Phasellus in lorem et nisi sodales faucibus a at nibh. Nulla quis ligula lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sagittis tellus at pretium. Nullam nec mi eget est rutrum semper. Aliquam erat volutpat. Cras molestie volutpat libero, vel scelerisque velit porttitor et. Curabitur sit amet euismod risus. Donec vitae fringilla erat, nec pharetra leo. Duis euismod pharetra ante id eleifend. Sed ligula dolor, lacinia rhoncus urna ut, congue gravida elit. Maecenas ac ultricies lacus.
+
+Duis ornare tortor eget tristique euismod. Sed ullamcorper est eget turpis finibus pharetra. Sed id vehicula dui, ac rhoncus elit. Quisque ut ultricies lacus. Etiam sit amet aliquet nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris porttitor libero pharetra arcu porta blandit. Donec non facilisis tellus, nec pretium arcu.
+
+Maecenas finibus tempor urna eget egestas. In sagittis nibh in urna sagittis porta. Praesent leo ipsum, porttitor ut convallis et, porttitor non dui. Nam in dapibus sapien. Aenean ipsum risus, aliquam at dictum bibendum, bibendum non eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In hac habitasse platea dictumst. Nam at volutpat diam, a condimentum risus. Donec sed facilisis urna. Sed eleifend, augue et ultrices tempus, tellus lectus sollicitudin ipsum, sit amet suscipit urna odio vel lacus. Sed ullamcorper elit a nisl interdum, ac venenatis dolor varius. In hac habitasse platea dictumst. Maecenas nisl purus, porttitor sit amet aliquam sed, rutrum sit amet elit. Ut eget mi orci.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra quam quis est suscipit aliquam. Quisque tempus varius nisl, sit amet fermentum ipsum pharetra in. Quisque sagittis molestie enim nec tempus. Quisque vel ullamcorper neque, ac accumsan justo. Donec ultricies fringilla elementum. Suspendisse pulvinar arcu sit amet facilisis vestibulum. Praesent imperdiet sed ex sit amet lacinia.
+
+Mauris dignissim vitae turpis sit amet feugiat. Nullam bibendum lectus tellus, sit amet porta nisl fringilla non. Vivamus arcu ante, dapibus et fringilla in, interdum in turpis. Pellentesque accumsan in libero eu consequat. Aliquam ligula dui, egestas mattis sollicitudin in, aliquam vitae purus. Donec placerat ut magna at vestibulum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam eros ante, vulputate eu vehicula non, varius vel est. Maecenas ac suscipit enim. Praesent eu tellus massa. Pellentesque vulputate et mi vel posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis purus nisi, non gravida velit eleifend eget.
+
+Nam diam turpis, euismod nec mi a, ultrices semper nunc. Ut eu tristique dolor. Fusce lorem libero, tincidunt vitae ante et, dignissim pellentesque ante. Phasellus in lorem et nisi sodales faucibus a at nibh. Nulla quis ligula lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sagittis tellus at pretium. Nullam nec mi eget est rutrum semper. Aliquam erat volutpat. Cras molestie volutpat libero, vel scelerisque velit porttitor et. Curabitur sit amet euismod risus. Donec vitae fringilla erat, nec pharetra leo. Duis euismod pharetra ante id eleifend. Sed ligula dolor, lacinia rhoncus urna ut, congue gravida elit. Maecenas ac ultricies lacus.
+
+Duis ornare tortor eget tristique euismod. Sed ullamcorper est eget turpis finibus pharetra. Sed id vehicula dui, ac rhoncus elit. Quisque ut ultricies lacus. Etiam sit amet aliquet nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris porttitor libero pharetra arcu porta blandit. Donec non facilisis tellus, nec pretium arcu.
+
+Maecenas finibus tempor urna eget egestas. In sagittis nibh in urna sagittis porta. Praesent leo ipsum, porttitor ut convallis et, porttitor non dui. Nam in dapibus sapien. Aenean ipsum risus, aliquam at dictum bibendum, bibendum non eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In hac habitasse platea dictumst. Nam at volutpat diam, a condimentum risus. Donec sed facilisis urna. Sed eleifend, augue et ultrices tempus, tellus lectus sollicitudin ipsum, sit amet suscipit urna odio vel lacus. Sed ullamcorper elit a nisl interdum, ac venenatis dolor varius. In hac habitasse platea dictumst. Maecenas nisl purus, porttitor sit amet aliquam sed, rutrum sit amet elit. Ut eget mi orci.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra quam quis est suscipit aliquam. Quisque tempus varius nisl, sit amet fermentum ipsum pharetra in. Quisque sagittis molestie enim nec tempus. Quisque vel ullamcorper neque, ac accumsan justo. Donec ultricies fringilla elementum. Suspendisse pulvinar arcu sit amet facilisis vestibulum. Praesent imperdiet sed ex sit amet lacinia.
+
+Mauris dignissim vitae turpis sit amet feugiat. Nullam bibendum lectus tellus, sit amet porta nisl fringilla non. Vivamus arcu ante, dapibus et fringilla in, interdum in turpis. Pellentesque accumsan in libero eu consequat. Aliquam ligula dui, egestas mattis sollicitudin in, aliquam vitae purus. Donec placerat ut magna at vestibulum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam eros ante, vulputate eu vehicula non, varius vel est. Maecenas ac suscipit enim. Praesent eu tellus massa. Pellentesque vulputate et mi vel posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis purus nisi, non gravida velit eleifend eget.
+
+Nam diam turpis, euismod nec mi a, ultrices semper nunc. Ut eu tristique dolor. Fusce lorem libero, tincidunt vitae ante et, dignissim pellentesque ante. Phasellus in lorem et nisi sodales faucibus a at nibh. Nulla quis ligula lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sagittis tellus at pretium. Nullam nec mi eget est rutrum semper. Aliquam erat volutpat. Cras molestie volutpat libero, vel scelerisque velit porttitor et. Curabitur sit amet euismod risus. Donec vitae fringilla erat, nec pharetra leo. Duis euismod pharetra ante id eleifend. Sed ligula dolor, lacinia rhoncus urna ut, congue gravida elit. Maecenas ac ultricies lacus.
+
+Duis ornare tortor eget tristique euismod. Sed ullamcorper est eget turpis finibus pharetra. Sed id vehicula dui, ac rhoncus elit. Quisque ut ultricies lacus. Etiam sit amet aliquet nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris porttitor libero pharetra arcu porta blandit. Donec non facilisis tellus, nec pretium arcu.
+
+Maecenas finibus tempor urna eget egestas. In sagittis nibh in urna sagittis porta. Praesent leo ipsum, porttitor ut convallis et, porttitor non dui. Nam in dapibus sapien. Aenean ipsum risus, aliquam at dictum bibendum, bibendum non eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In hac habitasse platea dictumst. Nam at volutpat diam, a condimentum risus. Donec sed facilisis urna. Sed eleifend, augue et ultrices tempus, tellus lectus sollicitudin ipsum, sit amet suscipit urna odio vel lacus. Sed ullamcorper elit a nisl interdum, ac venenatis dolor varius. In hac habitasse platea dictumst. Maecenas nisl purus, porttitor sit amet aliquam sed, rutrum sit amet elit. Ut eget mi orci.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra quam quis est suscipit aliquam. Quisque tempus varius nisl, sit amet fermentum ipsum pharetra in. Quisque sagittis molestie enim nec tempus. Quisque vel ullamcorper neque, ac accumsan justo. Donec ultricies fringilla elementum. Suspendisse pulvinar arcu sit amet facilisis vestibulum. Praesent imperdiet sed ex sit amet lacinia.
+
+Mauris dignissim vitae turpis sit amet feugiat. Nullam bibendum lectus tellus, sit amet porta nisl fringilla non. Vivamus arcu ante, dapibus et fringilla in, interdum in turpis. Pellentesque accumsan in libero eu consequat. Aliquam ligula dui, egestas mattis sollicitudin in, aliquam vitae purus. Donec placerat ut magna at vestibulum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam eros ante, vulputate eu vehicula non, varius vel est. Maecenas ac suscipit enim. Praesent eu tellus massa. Pellentesque vulputate et mi vel posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis purus nisi, non gravida velit eleifend eget.
+    
+    </div>
+    
+    <div> <h1> testt !</h1></div>
+</div>
+
+
+
+
+
+
+
 
         <!-- Bootstrap core JavaScript
 ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="bootstrap/js/jquery.js"></script>
         <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-        <script src="bootstrap/js/bootstrap.js"></script>
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     </body>
 </html>
