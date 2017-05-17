@@ -36,21 +36,21 @@
     <body>
 
         <ul id="pictures-demo">
-            <li title="This is caption 1 <a href='#link'>Even with links!</a>">
-                <img src="img/fond1.jpg" alt="demo1_1">
+            <li title="Fond1">
+                <img src="img/fond1.jpg" alt="Fond1">
             </li>
-            <li title="This is caption 2">
-                <img src="img/fond2.jpg"  alt="demo1_2">
+            <li title="Fond2">
+                <img src="img/fond2.jpg"  alt="Fond2">
             </li>
-            <li title="And this is some very long caption for slide 3. Yes, really long.">
-                <img src="img/fond3.jpg" alt="demo1_3">
+            <li title="Fond3">
+                <img src="img/fond3.jpg" alt="Fond3">
             </li>
         </ul>
         <script> 
             $(function(){
                 var demo1= $('#pictures-demo').slippry({
                     // general elements & wrapper
-                    slippryWrapper: '<div class="sy-box pictures-slider" />', // wrapper to wrap everything, including pager
+                    slippryWrapper: '<div class="sy-box pictures-slider" style="z-index: 2;width: 100%;position: absolute;"/>', // wrapper to wrap everything, including pager
 
                     // options
                     adaptiveHeight: false, // height of the sliders adapts to current slide
@@ -66,22 +66,13 @@
                     // transitions
                     transition: 'kenburns', // fade, horizontal, kenburns, false
                     kenZoom: 140,
-                    speed: 77000 // time the transition takes (ms)
+                    speed: 7000 // time the transition takes (ms)
                 });
             });
         </script>
 
-
-
-
-
-
-
-
-
-
-
-        <div class="site-wrapper">
+<div class="content" style="z-index: 10;position: relative;">
+        <div class="site-wrapper" style="z-index: 10;position: relative;">
 
             <div class="site-wrapper-inner">
 
@@ -116,8 +107,18 @@
                 </div>
 
             </div>
-
         </div>
+    
+    <div style="backgroud-color:balck;"> 
+    <h1> test !!!! </h1></div>
+</div>
+
+
+
+
+
+
+
 
         <!-- Bootstrap core JavaScript
 ================================================== -->
